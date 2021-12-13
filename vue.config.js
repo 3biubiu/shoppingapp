@@ -8,6 +8,7 @@ module.exports = {
         'common': "@/common",
         'components': "@/components",
         'network': "@/network",
+        'views' : '@/views',
         // 'router': "@/router",引用次数少
         // 'store': "@/store", this.$就能引用
       },
