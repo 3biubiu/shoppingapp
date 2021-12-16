@@ -36,7 +36,7 @@ export default {
         display: flex;
         /* width: 100%; */
         margin-top: 5px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         border-bottom: solid 8px #e9e9e9;
     }
     .recommend-item{
