@@ -39,9 +39,10 @@ export default {
   text-align: center;
   font-size: 13px;
   font-weight: 500;
-  height: 40px;
-  line-height: 40px;
+  height: 35px;
+  line-height: 35px;
   background-color: #fff;
+  /* margin-bottom: 10px; */
 }
 .tab-control-item {
   flex: 1;

@@ -8,6 +8,7 @@
     <recommend-view :recommends="recommends"></recommend-view>
     <feature-view></feature-view>
     <tab-control :titles="['流行', '新款', '精选']"></tab-control>
+    <goods-list :goods = "goods['pop'].list"></goods-list>
     <!-- 撑起底部内容高度 -->
     <padding :padding-height="800"></padding>
   </div>
@@ -17,6 +18,7 @@
 import padding from "components/common/padding/padding";
 import NavBar from "components/common/navbar/NavBar";
 import TabControl from "components/content/tabControl/tabControl";
+import goodsList from "components/content/goods/goodsList"
 
 import { getHomeMultidata, getHomeGoods } from "network/home";
 
@@ -33,6 +35,7 @@ export default {
     FeatureView,
     padding,
     TabControl,
+    goodsList
   },
   data() {
     return {
