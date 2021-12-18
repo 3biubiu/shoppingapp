@@ -5,7 +5,7 @@
       v-for="(item, index) in titles"
       :key="index"
       :class="{ active: index === currentIndex }"
-      @click = "currentIndex = index"
+      @click = "itemClick(index)"
     >
       <span>{{ item }}</span>
     </div>
@@ -21,6 +21,12 @@ export default {
     };
   },
   components: {},
+  methods:{
+    itemClick(index){
+      this.currentIndex = index;
+      this.$emit('tabClick',index)
+    }
+  },
   props: {
     titles: {
       type: Array,
@@ -43,6 +49,7 @@ export default {
   line-height: 35px;
   background-color: #fff;
   /* margin-bottom: 10px; */
+  z-index: 9;
 }
 .tab-control-item {
   flex: 1;

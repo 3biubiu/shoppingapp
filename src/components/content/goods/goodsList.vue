@@ -28,7 +28,7 @@ export default {
 
 <style scoped>
 .goods {
-  padding-top: 5px;
+  padding-top: 2px;
   /* margin-right: 8px; */
   /* width: 100%; */
   display: flex;
